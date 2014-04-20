@@ -73,7 +73,7 @@ video {
 
 
 h1, h2, h3 {
-    margin: 0 0 15px 0;
+    margin: 0 0 20px 0;
     text-transform: uppercase;
 }
 
@@ -83,8 +83,15 @@ h1 {
 }
 
 h2 {
-    font-size: 1.950em;
-    font-weight: 800;    
+    font-size: 2.0em;
+    font-weight: 800;
+    letter-spacing: -0.02em;
+
+    &.underline {
+        padding-bottom: 7px;
+        border-bottom: 1px solid #ddd;
+        margin-bottom: 25px;
+    }
 }
 
 .before-text {
