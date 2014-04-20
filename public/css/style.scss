@@ -174,7 +174,35 @@ header nav a {
 
 section {
     padding: 55px 15px;
-    &.dark { background: $background-secondary; color: white; }
+
+    &.shield {
+        background-color: $background-secondary;
+        background-image: url(../img/shield.png);
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: 575px 509px;
+        color: white;
+        padding: 200px 0;
+        text-align: center;
+    }
+
+    &.dark { 
+        background: $background-secondary;
+        color: white;
+    }
+    
+    &.woods {
+        color: white;
+        padding: 200px 0;
+        text-align: center;
+  
+        //background: url(../img/orlando.jpg) no-repeat center center; 
+        background: url(../img/woods.jpg) no-repeat center center; 
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+    }
 }
 
 
