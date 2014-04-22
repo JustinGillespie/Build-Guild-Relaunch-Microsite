@@ -203,7 +203,27 @@ section {
         -o-background-size: cover;
         background-size: cover;
     }
+
 }
+
+
+.sponsors {
+    .column, .columns {
+        font-size: 0.25em;
+        color: #999;
+        text-align: center;
+        background-color: rgba(235, 235, 235, 1);        
+    }
+}
+
+.event-details {
+
+}
+
+.map {
+    padding: 0;
+}
+
 
 
 /* ==========================================================================
