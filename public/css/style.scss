@@ -191,18 +191,18 @@ section {
         color: white;
     }
     
-    &.woods {
-        color: white;
-        padding: 200px 0;
-        text-align: center;
+    // &.woods {
+    //     color: white;
+    //     padding: 200px 0;
+    //     text-align: center;
   
-        //background: url(../img/orlando.jpg) no-repeat center center; 
-        background: url(../img/woods.jpg) no-repeat center center; 
-        -webkit-background-size: cover;
-        -moz-background-size: cover;
-        -o-background-size: cover;
-        background-size: cover;
-    }
+    //     //background: url(../img/orlando.jpg) no-repeat center center; 
+    //     background: url(../img/woods.jpg) no-repeat center center; 
+    //     -webkit-background-size: cover;
+    //     -moz-background-size: cover;
+    //     -o-background-size: cover;
+    //     background-size: cover;
+    // }
 
 }
 
@@ -216,8 +216,44 @@ section {
     }
 }
 
-.event-details {
 
+.event-details {
+    background: url(../img/woods2.jpg) no-repeat center center;
+    color: white;
+    padding: 150px 0;
+    text-align: center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+
+.rsvp-link {
+    text-transform: uppercase;
+    
+    em {
+        font-style: normal;
+        color: #7f0000;
+    }
+}
+
+
+.schedule {
+    margin: 100px auto 0;
+    padding: 30px;
+    width: 50%;
+    font-weight: bold;
+    color: #bababa;
+    background-color: rgba(0,0,0,.45);
+
+    ul, li {
+        list-style: none
+    }
+
+    li {
+        margin: 10px 0;
+    }
 }
 
 .map {
