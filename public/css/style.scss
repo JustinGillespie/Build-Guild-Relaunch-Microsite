@@ -3,7 +3,7 @@
 $header: #030303;
 
 $background-primary: #ffffff;
-$background-secondary: #151819;
+$background-secondary: #252a2c; // old color #151819; lightened for shittier monitors so it doesnt look black
 
 $accent1: #6ebff7; // #0ec1a4; // Teal
 $accent2: #f54b48; // Red
@@ -205,6 +205,10 @@ section {
     // }
 
 }
+.intro {
+    padding: 150px 0;
+}
+
 
 
 .sponsors {
