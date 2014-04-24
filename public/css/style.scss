@@ -3,7 +3,10 @@
 $header: #030303;
 
 $background-primary: #ffffff;
-$background-secondary: #252a2c; // old color #151819; lightened for shittier monitors so it doesnt look black
+$background-secondary: #151819;
+
+$light-text1: #fff;
+$light-text2: #adadad; // light grey
 
 $accent1: #6ebff7; // #0ec1a4; // Teal
 $accent2: #f54b48; // Red
@@ -95,7 +98,7 @@ h2 {
 }
 
 .before-text {
-    color: #6f6f6f;
+    // color: #6f6f6f;
     font-size: 1.7em;
     font-weight: 300;
     text-transform: uppercase;
@@ -181,30 +184,34 @@ section {
         background-position: center center;
         background-repeat: no-repeat;
         background-size: 575px 509px;
-        color: white;
-        padding: 200px 0;
+        padding: 100px 0;
         text-align: center;
+        color: $light-text2;
+        h1 {color: #fff} 
     }
 
     &.dark { 
         background: $background-secondary;
-        color: white;
+        color: $light-text2;
     }
-    
-    // &.woods {
-    //     color: white;
-    //     padding: 200px 0;
-    //     text-align: center;
-  
-    //     //background: url(../img/orlando.jpg) no-repeat center center; 
-    //     background: url(../img/woods.jpg) no-repeat center center; 
-    //     -webkit-background-size: cover;
-    //     -moz-background-size: cover;
-    //     -o-background-size: cover;
-    //     background-size: cover;
-    // }
 
 }
+
+
+.venue-text {
+    margin: 50px 0;
+    font-size: 1.3em;
+
+    strong {
+
+        display: block;
+        color: $light-text1;
+        font-size: 2.3em;
+        text-transform: uppercase;
+    }
+}
+
+
 .intro {
     padding: 150px 0;
 }
@@ -248,7 +255,7 @@ section {
     padding: 30px;
     width: 50%;
     font-weight: bold;
-    color: #bababa;
+    color: $light-text2;
     background-color: rgba(0,0,0,.45);
 
     ul, li {
