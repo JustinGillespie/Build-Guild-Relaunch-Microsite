@@ -182,6 +182,7 @@ header nav a {
     font-weight: 600;
     font-style: normal;
     text-decoration: underline;
+    margin-left: 40px;
 }
 
 
@@ -227,14 +228,7 @@ section {
 
 }
 
-.highlights {
-    color: #666;
-    font-size: 1.1em;
-    font-weight: 700;
-    font-style: italic;
-    margin-top: 40px; 
-    span { font-size: 0.7em; padding: 0 10px; }
-}
+.highlights span { font-size: 0.7em; padding: 0 10px; }
 
 
 /* ==========================================================================
