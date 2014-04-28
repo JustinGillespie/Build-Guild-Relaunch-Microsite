@@ -1,4 +1,10 @@
 
+@mixin backface-visibility($props) {
+    backface-visibility: $props;
+    -webkit-backface-visibility: $props;
+}
+
+
 @mixin border-box {
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
@@ -19,12 +25,31 @@
 }
 
 
+@mixin perspective($props) {
+    -webkit-perspective: $props;
+    perspective: $props;
+}
+
+
 @mixin stack($breakpoint) {
     @include break-max($breakpoint) {
         clear: both !important;
         float: none !important;
         width: 100% !important;
     }
+}
+
+
+@mixin transform($props) {
+    -webkit-transform: $props;
+    -o-transform: $props;
+    transform: props;
+}
+
+
+@mixin transform-style($props) {
+    -webkit-transform-style: $props;
+    transform-style: $props;
 }
 
 
