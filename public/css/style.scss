@@ -119,6 +119,7 @@ h3 {
     @include break-max($mobile) { font-size: 1.2em; }
 }
 
+a { color: $accent1 }
 
 /* ==========================================================================
    Header
@@ -228,7 +229,7 @@ section {
 
 .highlights {
     color: #666;
-    font-size: 1.2em;
+    font-size: 1.1em;
     font-weight: 700;
     font-style: italic;
     margin-top: 40px; 
@@ -337,32 +338,6 @@ section {
 }
 
 
-
-// .sponsors {
-//     .column, .columns {
-//         color: #999;
-//         text-align: center;
-//     }
-// }
-
-.bg-sponsor {
-    margin: 10px;
-    padding: 15px;
-    border: 1px solid #999;
-    display: inline-block;
-
-    &.platinum {
-        font-size: 1.75em;
-    }
-    &.gold{
-        font-size: 1.5em;
-    }
-    &.silver {
-        font-size: 1.2em;
-    }
-}
-
-
 .event-details {
     background: url(../img/orlando.jpg) no-repeat center center;
     color: white;
@@ -372,37 +347,59 @@ section {
     -o-background-size: cover;
     background-size: cover;
 
-    h2 {
-        text-shadow: 0 0 10px #000;
-    }
 }
-
 
 .rsvp-link {
     margin-top: 50px;
+    padding: 20px !important;
 
     em {
         font-style: normal;
-        color: #7f0000;
+        color: darken($accent1, 40%);
+        display: inline-block;
+        padding-right: 5px;
     }
 }
 
 
 .schedule {
+    color: white;
     margin: 70px auto 0;
-    padding: 30px;
+    padding: 10px 0 0 0;
     width: 50%;
-    font-weight: bold;
-    color: $light-text2;
-
-    ul, li {
-        list-style: none
+    
+    ul, li { list-style: none; margin: 0; padding: 0; }
+    li { 
+        background-color: rgba(255, 255, 255, 0.2); 
+        font-weight: 700;
+        font-size: 0.950em;
+        text-transform: uppercase;
+        text-align: left;
+        padding: 30px; 
+        margin-top: 2px;
+        @include break-max($mobile) {
+            padding: 20px 10px;
+        }
     }
 
-    li {
-        margin: 10px 0;
+    em {
+        @include rounded(8px);
+        background: #151819;
+        display: inline-block;
+        padding: 4px 6px;
+        margin-right: 20px;
+        @include break-max($mobile) {
+            margin-right: 10px;
+        }
+    }
+
+    @include break-max($mobile) {
+        font-size: 0.8em;
+        padding: 0;
+        width: 100%;
     }
 }
+
 
 .map {
     padding: 0;
