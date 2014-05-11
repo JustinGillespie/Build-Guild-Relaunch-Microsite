@@ -1,4 +1,4 @@
-@import url("http://fonts.googleapis.com/css?family=Open+Sans:700italic,400,600,300,800,700");
+@import url("http://fonts.googleapis.com/css?family=Open+Sans:700italic,400,600,300,800,700,300italic");
 
 $header: #030303;
 
@@ -15,7 +15,6 @@ $mobile: 767px;
 
 @import "normalize";
 @import "mixins";
-
 
 /* ==========================================================================
    Global / Base
@@ -96,6 +95,8 @@ h2 {
         border-bottom: 1px solid #ddd;
         margin-bottom: 25px;
     }
+
+    &.white { color: white; }
 }
 
 h3 {
@@ -104,6 +105,7 @@ h3 {
     font-style: italic;
     letter-spacing: 0.020em;
 
+    &.white  { color: white;   }
     &.teal   { color: #0ec1a4; }
     &.gold   { color: #f9e59e; }
     &.silver { color: #dadada; }
@@ -112,7 +114,7 @@ h3 {
 
 .before-text {
     // color: #6f6f6f;
-    font-size: 1.7em;
+    font-size: 1.3em;
     font-weight: 300;
     text-transform: uppercase;
     letter-spacing: 0.050em;
@@ -133,6 +135,9 @@ header {
     background: $header;
     color: white;
     padding: 15px;
+    position: fixed;
+    top: 0;
+    width: 100%;
 }
 
 header a {
@@ -192,7 +197,7 @@ header nav a {
 
 
 section {
-    padding: 100px 15px;
+    padding: 130px 15px;
 
     &.shield {
         background-color: $background-secondary;
@@ -202,16 +207,19 @@ section {
         background-size: 575px 509px;
         text-align: center;
         color: $light-text2;
-        padding: 150px 15px;
-        h1 {color: #fff}
+        padding: 210px 15px;
+        margin-top: 70px;
+        h1 {color: #fff; margin-bottom: 45px; }
     }
 
-    &.about {
+    &.about, &.blue {
         background: $header;
         color: white; //#6f6f6f;
         font-size: 1.1em;
         padding: 30px 15px;
         text-align: center;
+
+        a { text-decoration: none; }
     }
 
     &.dark {
@@ -221,9 +229,14 @@ section {
         h1 { color: #fff }
     }
 
-    &.intro {
+    &.light {
+        background: url('../img/cream_pixels.png') repeat;
         text-align: center;
-        p { max-width: 800px; margin: 50px auto; }
+    }
+
+    &.blue {
+        background: $accent1;
+        color: white;
     }
 
 }
@@ -335,6 +348,7 @@ section {
 .event-details {
     background: url(../img/orlando.jpg) no-repeat center center;
     color: white;
+    padding: 180px 15px;
     text-align: center;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -344,8 +358,10 @@ section {
 }
 
 .rsvp-link {
-    margin-top: 50px;
-    padding: 20px !important;
+    border: 2px solid $accent2;
+    background: none !important;
+    margin-top: 20px;
+    padding: 18px !important;
 
     em {
         font-style: normal;
@@ -360,28 +376,30 @@ section {
     color: white;
     margin: 70px auto 0;
     padding: 10px 0 0 0;
-    width: 50%;
+    
+    ul { @include clear; text-align: center; }
 
     ul, li { list-style: none; margin: 0; padding: 0; }
     li {
         background-color: rgba(255, 255, 255, 0.2);
-        font-weight: 700;
+        font-weight: 300;
         font-size: 0.950em;
         text-transform: uppercase;
+        display: inline-block;
+        height: 200px;
         text-align: left;
-        padding: 30px;
+        padding: 20px;
         margin-top: 2px;
+        width: 22%;
         @include break-max($mobile) {
             padding: 20px 10px;
         }
     }
 
     em {
-        @include rounded(8px);
-        background: #151819;
-        display: inline-block;
-        padding: 4px 6px;
-        margin-right: 20px;
+        display: block;
+        font-size: 1.6em;
+        margin-bottom: 20px;
         @include break-max($mobile) {
             margin-right: 10px;
         }
@@ -487,6 +505,27 @@ section {
     font-size: 0.9em;
     padding: 12px 14px;
 }
+
+.note {
+    @include clear;
+    //background: white;
+    font-weight: 300;
+    font-style: italic;
+    font-size: 1.6em;
+    max-width: 800px;
+    margin: 0 auto;
+    &:first-child { margin-top: 0; }
+
+    .fa {
+        color: $background-secondary;
+        font-size: 1.8em;
+        margin-bottom: 25px;
+    }
+
+    .fa-trophy { color: $accent1; }
+}
+
+
 
 
 /* ==========================================================================
